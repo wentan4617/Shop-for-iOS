@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49624DA8EAC405C80C1C1E24 /* libPods-ygcr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EE304D504DB466AB3EAF55 /* libPods-ygcr.a */; };
 		6E044F6E3BB43D1D743554BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE974764DD86978FE1B9BB69 /* libPods.a */; };
+		C8FB3E202D2CEC8D41ACA79E /* libPods-ygcrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6E3316A22047167E521908 /* libPods-ygcrTests.a */; };
 		EA2FA3E71C89B1D100714152 /* AddressListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3E61C89B1D100714152 /* AddressListCell.m */; };
 		EA2FA3EA1C89B75F00714152 /* AddressListEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3E91C89B75F00714152 /* AddressListEmptyCell.m */; };
 		EA2FA3ED1C89D6EA00714152 /* AddressAddBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3EC1C89D6EA00714152 /* AddressAddBtn.m */; };
 		EA2FA3F01C89E05100714152 /* AddressAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3EF1C89E05100714152 /* AddressAddView.m */; };
 		EA2FA3F31C89E13E00714152 /* AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3F21C89E13E00714152 /* AddressModel.m */; };
 		EA2FA3F61C8AA51700714152 /* ButtonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3F51C8AA51700714152 /* ButtonUtil.m */; };
+		EA4569CF1C957EE4007AEC78 /* StorageUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4569CE1C957EE4007AEC78 /* StorageUtilTest.m */; };
+		EA4569D51C958130007AEC78 /* UserEntityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4569D41C958130007AEC78 /* UserEntityTest.m */; };
 		EA5BB8D31C873A2900163F82 /* TabMySettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5BB8D21C873A2900163F82 /* TabMySettingController.m */; };
 		EA5BB8D61C87579F00163F82 /* CartController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5BB8D51C87579F00163F82 /* CartController.m */; };
 		EA5BB8DA1C87615900163F82 /* PreorderController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5BB8D91C87615900163F82 /* PreorderController.m */; };
@@ -133,8 +137,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43B5BFA0BF4544924927D37F /* Pods-ygcr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ygcr/Pods-ygcr.debug.xcconfig"; sourceTree = "<group>"; };
 		485D93A2BB5452262BD897C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		60FF9CAC902F85FC422BFB7F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6968EDD79D3354E5BE7BB9A9 /* Pods-ygcrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ygcrTests/Pods-ygcrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7853A7F06C9C58FBA7AB243B /* Pods-ygcr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ygcr/Pods-ygcr.release.xcconfig"; sourceTree = "<group>"; };
+		96EE304D504DB466AB3EAF55 /* libPods-ygcr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ygcr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6E3316A22047167E521908 /* libPods-ygcrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ygcrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2FA3E51C89B1D100714152 /* AddressListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListCell.h; sourceTree = "<group>"; };
 		EA2FA3E61C89B1D100714152 /* AddressListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListCell.m; sourceTree = "<group>"; };
 		EA2FA3E81C89B75F00714152 /* AddressListEmptyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListEmptyCell.h; sourceTree = "<group>"; };
@@ -147,6 +156,8 @@
 		EA2FA3F21C89E13E00714152 /* AddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressModel.m; sourceTree = "<group>"; };
 		EA2FA3F41C8AA51700714152 /* ButtonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonUtil.h; sourceTree = "<group>"; };
 		EA2FA3F51C8AA51700714152 /* ButtonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonUtil.m; sourceTree = "<group>"; };
+		EA4569CE1C957EE4007AEC78 /* StorageUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageUtilTest.m; sourceTree = "<group>"; };
+		EA4569D41C958130007AEC78 /* UserEntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntityTest.m; sourceTree = "<group>"; };
 		EA5BB8D11C873A2900163F82 /* TabMySettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabMySettingController.h; sourceTree = "<group>"; };
 		EA5BB8D21C873A2900163F82 /* TabMySettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabMySettingController.m; sourceTree = "<group>"; };
 		EA5BB8D41C87579F00163F82 /* CartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartController.h; sourceTree = "<group>"; };
@@ -354,6 +365,7 @@
 		EAFBA7321C816C3D0001015D /* TabTopicTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTopicTopCell.h; sourceTree = "<group>"; };
 		EAFBA7331C816C3D0001015D /* TabTopicTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTopicTopCell.m; sourceTree = "<group>"; };
 		EE974764DD86978FE1B9BB69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F2A28EA8E62B707CA9B055 /* Pods-ygcrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ygcrTests/Pods-ygcrTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E044F6E3BB43D1D743554BB /* libPods.a in Frameworks */,
+				49624DA8EAC405C80C1C1E24 /* libPods-ygcr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +382,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FB3E202D2CEC8D41ACA79E /* libPods-ygcrTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +400,8 @@
 			isa = PBXGroup;
 			children = (
 				EE974764DD86978FE1B9BB69 /* libPods.a */,
+				96EE304D504DB466AB3EAF55 /* libPods-ygcr.a */,
+				AA6E3316A22047167E521908 /* libPods-ygcrTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -395,8 +411,52 @@
 			children = (
 				60FF9CAC902F85FC422BFB7F /* Pods.debug.xcconfig */,
 				485D93A2BB5452262BD897C1 /* Pods.release.xcconfig */,
+				6968EDD79D3354E5BE7BB9A9 /* Pods-ygcrTests.debug.xcconfig */,
+				F0F2A28EA8E62B707CA9B055 /* Pods-ygcrTests.release.xcconfig */,
+				43B5BFA0BF4544924927D37F /* Pods-ygcr.debug.xcconfig */,
+				7853A7F06C9C58FBA7AB243B /* Pods-ygcr.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA4569CD1C957EAB007AEC78 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EA4569CE1C957EE4007AEC78 /* StorageUtilTest.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		EA4569D01C9580E6007AEC78 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				EA4569D11C9580F6007AEC78 /* Service */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		EA4569D11C9580F6007AEC78 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EA4569D31C958113007AEC78 /* Model */,
+				EA4569D21C95810E007AEC78 /* Entity */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		EA4569D21C95810E007AEC78 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EA4569D41C958130007AEC78 /* UserEntityTest.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		EA4569D31C958113007AEC78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EA5BB8D71C87612E00163F82 /* Preorder */ = {
@@ -529,6 +589,8 @@
 		EA6C57721C7AC810008DE667 /* ygcrTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA4569D01C9580E6007AEC78 /* Module */,
+				EA4569CD1C957EAB007AEC78 /* Util */,
 				EA6C57731C7AC810008DE667 /* ygcrTests.m */,
 				EA6C57751C7AC810008DE667 /* Info.plist */,
 			);
@@ -944,12 +1006,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA6C57831C7AC810008DE667 /* Build configuration list for PBXNativeTarget "ygcr" */;
 			buildPhases = (
-				7C9E5B7B15C3CDC118698B39 /* Check Pods Manifest.lock */,
 				EA6C57521C7AC810008DE667 /* Sources */,
 				EA6C57531C7AC810008DE667 /* Frameworks */,
 				EA6C57541C7AC810008DE667 /* Resources */,
 				0732F3ADD28030ED27FC116D /* Embed Pods Frameworks */,
-				58347A38B9A3E04C5B612A4C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -964,9 +1024,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA6C57861C7AC810008DE667 /* Build configuration list for PBXNativeTarget "ygcrTests" */;
 			buildPhases = (
+				1C4CB853D734814E3034B36D /* Check Pods Manifest.lock */,
 				EA6C576B1C7AC810008DE667 /* Sources */,
 				EA6C576C1C7AC810008DE667 /* Frameworks */,
 				EA6C576D1C7AC810008DE667 /* Resources */,
+				244E561AEDBC319B9A9E6BC9 /* Embed Pods Frameworks */,
+				06556EB557D610D0635D146C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1065,6 +1128,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		06556EB557D610D0635D146C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ygcrTests/Pods-ygcrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0732F3ADD28030ED27FC116D /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1077,25 +1155,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ygcr/Pods-ygcr-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58347A38B9A3E04C5B612A4C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C9E5B7B15C3CDC118698B39 /* Check Pods Manifest.lock */ = {
+		1C4CB853D734814E3034B36D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1108,6 +1171,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		244E561AEDBC319B9A9E6BC9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ygcrTests/Pods-ygcrTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1225,7 +1303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4569D51C958130007AEC78 /* UserEntityTest.m in Sources */,
 				EA6C57741C7AC810008DE667 /* ygcrTests.m in Sources */,
+				EA4569CF1C957EE4007AEC78 /* StorageUtilTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1337,10 +1417,23 @@
 		};
 		EA6C57841C7AC810008DE667 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60FF9CAC902F85FC422BFB7F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 43B5BFA0BF4544924927D37F /* Pods-ygcr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "ygcr/ygcr-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/TouchJSON\"",
+					"\"${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell\"",
+					"\"${PODS_ROOT}/Headers/Public/jastor\"",
+				);
 				INFOPLIST_FILE = ygcr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1352,10 +1445,23 @@
 		};
 		EA6C57851C7AC810008DE667 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 485D93A2BB5452262BD897C1 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 7853A7F06C9C58FBA7AB243B /* Pods-ygcr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "ygcr/ygcr-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/TouchJSON\"",
+					"\"${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell\"",
+					"\"${PODS_ROOT}/Headers/Public/jastor\"",
+				);
 				INFOPLIST_FILE = ygcr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1367,8 +1473,14 @@
 		};
 		EA6C57871C7AC810008DE667 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6968EDD79D3354E5BE7BB9A9 /* Pods-ygcrTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/jastor\"",
+				);
 				INFOPLIST_FILE = ygcrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ykx.ygcrTests;
@@ -1379,8 +1491,14 @@
 		};
 		EA6C57881C7AC810008DE667 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F2A28EA8E62B707CA9B055 /* Pods-ygcrTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/jastor\"",
+				);
 				INFOPLIST_FILE = ygcrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ykx.ygcrTests;

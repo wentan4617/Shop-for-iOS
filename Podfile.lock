@@ -27,6 +27,7 @@ PODS:
   - jastor (0.2.1)
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
+  - OCMock (3.2.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - jastor (~> 0.2.1)
   - Masonry (~> 0.6.4)
   - MBProgressHUD (~> 0.9.2)
+  - OCMock
   - SDWebImage (~> 3.7.1)
   - TouchJSON (~> 1.1)
   - UITableView+FDTemplateLayoutCell (~> 1.4)
@@ -51,6 +53,7 @@ SPEC CHECKSUMS:
   jastor: fe9ff71f4b683698253d6a0d9a2561987fd9aff3
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  OCMock: 18c9b7e67d4c2770e95bb77a9cc1ae0c91fe3835
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
