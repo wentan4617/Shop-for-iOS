@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		49624DA8EAC405C80C1C1E24 /* libPods-ygcr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EE304D504DB466AB3EAF55 /* libPods-ygcr.a */; };
-		6E044F6E3BB43D1D743554BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE974764DD86978FE1B9BB69 /* libPods.a */; };
 		C8FB3E202D2CEC8D41ACA79E /* libPods-ygcrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6E3316A22047167E521908 /* libPods-ygcrTests.a */; };
 		EA2FA3E71C89B1D100714152 /* AddressListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3E61C89B1D100714152 /* AddressListCell.m */; };
 		EA2FA3EA1C89B75F00714152 /* AddressListEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2FA3E91C89B75F00714152 /* AddressListEmptyCell.m */; };
@@ -138,8 +137,6 @@
 
 /* Begin PBXFileReference section */
 		43B5BFA0BF4544924927D37F /* Pods-ygcr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ygcr/Pods-ygcr.debug.xcconfig"; sourceTree = "<group>"; };
-		485D93A2BB5452262BD897C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		60FF9CAC902F85FC422BFB7F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6968EDD79D3354E5BE7BB9A9 /* Pods-ygcrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ygcrTests/Pods-ygcrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7853A7F06C9C58FBA7AB243B /* Pods-ygcr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ygcr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ygcr/Pods-ygcr.release.xcconfig"; sourceTree = "<group>"; };
 		96EE304D504DB466AB3EAF55 /* libPods-ygcr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ygcr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +329,7 @@
 		EADDA5821C8D3A2800D23DF0 /* OrderStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderStatus.m; sourceTree = "<group>"; };
 		EADDA5881C8D810200D23DF0 /* NetworkBrokenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBrokenView.h; sourceTree = "<group>"; };
 		EADDA5891C8D810200D23DF0 /* NetworkBrokenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkBrokenView.m; sourceTree = "<group>"; };
+		EADE578F1C9676CA00C2A773 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EAF255AA1C844850004ECC2E /* TabCartSubmitBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabCartSubmitBar.h; sourceTree = "<group>"; };
 		EAF255AB1C844850004ECC2E /* TabCartSubmitBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabCartSubmitBar.m; sourceTree = "<group>"; };
 		EAF255AD1C845652004ECC2E /* PreorderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreorderModel.h; sourceTree = "<group>"; };
@@ -373,7 +371,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E044F6E3BB43D1D743554BB /* libPods.a in Frameworks */,
 				49624DA8EAC405C80C1C1E24 /* libPods-ygcr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +396,7 @@
 		1F64032FDE850B8F9455DE3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EADE578F1C9676CA00C2A773 /* CoreLocation.framework */,
 				EE974764DD86978FE1B9BB69 /* libPods.a */,
 				96EE304D504DB466AB3EAF55 /* libPods-ygcr.a */,
 				AA6E3316A22047167E521908 /* libPods-ygcrTests.a */,
@@ -409,8 +407,6 @@
 		79112372AB94E196ED9AEEE9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				60FF9CAC902F85FC422BFB7F /* Pods.debug.xcconfig */,
-				485D93A2BB5452262BD897C1 /* Pods.release.xcconfig */,
 				6968EDD79D3354E5BE7BB9A9 /* Pods-ygcrTests.debug.xcconfig */,
 				F0F2A28EA8E62B707CA9B055 /* Pods-ygcrTests.release.xcconfig */,
 				43B5BFA0BF4544924927D37F /* Pods-ygcr.debug.xcconfig */,
