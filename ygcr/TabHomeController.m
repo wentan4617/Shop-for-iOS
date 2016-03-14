@@ -31,6 +31,7 @@
     NSArray *_categories;
     
     CLLocationManager *_locationManager;
+    CLGeocoder *_geocoder;
 }
 @end
 
@@ -75,6 +76,7 @@
     
     //启动定位跟踪
     [self startTrackingLocation];
+    _geocoder = [[CLGeocoder alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -269,6 +271,22 @@
     //NSLog(@"经度：%f, 纬度：%f, 海拔：%f, 航向：%f, 行走速度：%f", coordinate.longitude, coordinate.latitude,location.altitude, location.course, location.speed);
     //如果不需要实时定位，使用完即使关闭定位服务
     //[_locationManager stopUpdatingLocation];
+    
+    [self getAddressByLatitude:coordinate.latitude longitude:coordinate.longitude];
+}
+
+#pragma mark 根据坐标取得地名
+-(void)getAddressByLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude{
+    //反地理编码
+    CLLocation *location = [[CLLocation alloc]initWithLatitude:latitude longitude:longitude];
+    [_geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        //CLPlacemark *placemark=[placemarks firstObject];
+        //NSLog(@"%@", placemark);
+        //NSLog(@"详细信息:%@",placemark.addressDictionary);
+        //NSLog(@"Name: %@", [placemark.addressDictionary objectForKey:@"Name"]);
+        //NSLog(@"City: %@", [placemark.addressDictionary objectForKey:@"City"]);
+        //NSLog(@"State: %@", [placemark.addressDictionary objectForKey:@"State"]);
+    }];
 }
 
 @end

@@ -208,7 +208,7 @@ typedef enum{
     //eSectionHead
     if (eSectionHead == section) {
         if ([UserModel isUserLoginByStorage]) {
-            UserInfoController *userInfoCtrl = [UserInfoController new];
+            UserInfoController *userInfoCtrl = [[UserInfoController alloc] initWithUser:_user];
             userInfoCtrl.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:userInfoCtrl animated:YES];
         } else {

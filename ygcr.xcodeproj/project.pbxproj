@@ -59,6 +59,7 @@
 		EA6EF1CF1C888B3F00588264 /* AddressListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6EF1CE1C888B3F00588264 /* AddressListController.m */; };
 		EA6EF1D21C888B5E00588264 /* AddressEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6EF1D11C888B5E00588264 /* AddressEditController.m */; };
 		EA6EF1D51C888C3000588264 /* AddressAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6EF1D41C888C3000588264 /* AddressAddController.m */; };
+		EA806F8A1C96BE250004B0C3 /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F891C96BE250004B0C3 /* UserInfoView.m */; };
 		EA87C54A1C825DFF0054BFB6 /* TabTopicProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */; };
 		EA87C54D1C82D26F0054BFB6 /* TabCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C54C1C82D26F0054BFB6 /* TabCartController.m */; };
 		EA87C5511C83064A0054BFB6 /* CartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5501C83064A0054BFB6 /* CartModel.m */; };
@@ -246,6 +247,8 @@
 		EA6EF1D11C888B5E00588264 /* AddressEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressEditController.m; sourceTree = "<group>"; };
 		EA6EF1D31C888C3000588264 /* AddressAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAddController.h; sourceTree = "<group>"; };
 		EA6EF1D41C888C3000588264 /* AddressAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAddController.m; sourceTree = "<group>"; };
+		EA806F881C96BE250004B0C3 /* UserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
+		EA806F891C96BE250004B0C3 /* UserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
 		EA87C5481C825DFF0054BFB6 /* TabTopicProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTopicProductCell.h; sourceTree = "<group>"; };
 		EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTopicProductCell.m; sourceTree = "<group>"; };
 		EA87C54B1C82D26F0054BFB6 /* TabCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabCartController.h; sourceTree = "<group>"; };
@@ -978,6 +981,8 @@
 				EA64D25C1C85CDF100F18336 /* UserRegisterStep3View.m */,
 				EA64D2611C85DD7600F18336 /* UserRegisterSuccessView.h */,
 				EA64D2621C85DD7600F18336 /* UserRegisterSuccessView.m */,
+				EA806F881C96BE250004B0C3 /* UserInfoView.h */,
+				EA806F891C96BE250004B0C3 /* UserInfoView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1194,6 +1199,7 @@
 				EA2FA3F31C89E13E00714152 /* AddressModel.m in Sources */,
 				EADDA5561C8C5B4400D23DF0 /* PreorderItemsCell.m in Sources */,
 				EAF255C81C8465F3004ECC2E /* UserLoginController.m in Sources */,
+				EA806F8A1C96BE250004B0C3 /* UserInfoView.m in Sources */,
 				EAF255C01C846303004ECC2E /* UserEntity.m in Sources */,
 				EAF255B51C8456DA004ECC2E /* PreorderItemEntity.m in Sources */,
 				EAC496DB1C7C0E5400DCDD56 /* CategoryEntity.m in Sources */,

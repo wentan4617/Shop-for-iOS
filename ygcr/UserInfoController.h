@@ -11,7 +11,10 @@
 //
 
 #import "BaseController.h"
+#import "UserEntity.h"
 
 @interface UserInfoController : BaseController
+
+- (instancetype)initWithUser:(UserEntity *)user;
 
 @end
