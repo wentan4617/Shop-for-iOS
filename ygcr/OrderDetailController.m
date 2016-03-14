@@ -104,7 +104,7 @@ typedef enum{
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int section = indexPath.section;
+    NSInteger section = indexPath.section;
     NSString *identifier;
     
     if (eSectionStatus == section) {

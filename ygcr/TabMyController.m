@@ -118,8 +118,8 @@ typedef enum{
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *identifier;
-    int section = indexPath.section;
-    int row = indexPath.row;
+    NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row;
     //eSectionHead
     if (eSectionHead == indexPath.section) {
         identifier = @"TabMyHeadCell";

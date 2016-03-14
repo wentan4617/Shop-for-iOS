@@ -115,7 +115,7 @@
 
 -(void)toastWithError:(NSError *)error
 {
-    NSString *errorStr = [NSString stringWithFormat:@"网络出错：%@，code：%d", error.domain, error.code];
+    NSString *errorStr = [NSString stringWithFormat:@"网络出错：%@，code：%ld", error.domain, error.code];
     [self toast:errorStr];
 }
 

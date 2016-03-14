@@ -14,5 +14,4 @@ end
 
 target "ygcrTests" do
     pod 'OCMock'
-    pod 'jastor', '~> 0.2.1'
 end

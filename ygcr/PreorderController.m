@@ -148,7 +148,7 @@ typedef enum {
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *identifier;
-    int section = indexPath.section;
+    NSInteger section = indexPath.section;
     if (section == eSectionAddress) {
         identifier = @"PreorderAddressCell";
         PreorderAddressCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -215,7 +215,7 @@ typedef enum {
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat height = 44;
-    int section = indexPath.section;
+    NSInteger section = indexPath.section;
     if (section == eSectionAddress) {
         height = [PreorderAddressCell height];
     }

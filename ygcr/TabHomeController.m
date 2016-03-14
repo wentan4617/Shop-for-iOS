@@ -25,7 +25,7 @@
     
     CGFloat _leftTableWidth;
     
-    int _leftTableCurRow; //当前被选中的行
+    NSInteger _leftTableCurRow; //当前被选中的行
     
     NSArray *_categories;
 }
@@ -131,7 +131,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int num = 0;
+    NSInteger num = 0;
     //leftTable
     if (tableView == _leftTable) {
         if (_categories && _categories.count > 0) {

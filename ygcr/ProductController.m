@@ -102,8 +102,7 @@ typedef enum {
         }
         [weakSelf hideLoadingView];
     } failure:^(NSError *error) {
-        NSString *errorStr = [NSString stringWithFormat:@"网络出错：%@，code：%d", error.domain, error.code];
-        [self toast:errorStr];
+        [self toastWithError:error];
         [weakSelf hideLoadingView];
     }];
 }
@@ -207,8 +206,7 @@ typedef enum {
         }
         [_bottomView hideCartLoadingView];
     } failure:^(NSError *error) {
-        NSString *errorStr = [NSString stringWithFormat:@"网络出错：%@，code：%d", error.domain, error.code];
-        [self toast:errorStr];
+        [self toastWithError:error];
         [_bottomView hideCartLoadingView];
     }];
 }

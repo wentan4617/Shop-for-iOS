@@ -33,7 +33,7 @@
     CGFloat height = 0;
     CGFloat extraHeight = 40;
     CGFloat attrItemHeight = 40;
-    int count = product.attrItems.count;
+    NSInteger count = product.attrItems.count;
     if (count > 0) {
         height = extraHeight + attrItemHeight * count;
     }
@@ -107,7 +107,7 @@
 //打开属性选择器
 - (void)openPicker:(UIButton *)sender
 {
-    int itemIndex = sender.tag; //第几个属性被点击
+    NSInteger itemIndex = sender.tag; //第几个属性被点击
     
     if (_product.attrItems.count < itemIndex+1) {
         return;

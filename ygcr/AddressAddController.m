@@ -93,8 +93,8 @@
                                 [[NSNotificationCenter defaultCenter] postNotificationName:kNotifyPreorderAddressDidChanged object:nil userInfo:userInfo];
                                 [[NSNotificationCenter defaultCenter] postNotificationName:kNotifyPreorderAddressesDidChanged object:nil userInfo:userInfo];
                                 //返回到前两个控制器
-                                int ctrlCount = self.navigationController.viewControllers.count;
-                                int indexCount = 0;
+                                NSInteger ctrlCount = self.navigationController.viewControllers.count;
+                                NSInteger indexCount = 0;
                                 if (ctrlCount >= 3) {
                                     indexCount = ctrlCount - 3;
                                 }
