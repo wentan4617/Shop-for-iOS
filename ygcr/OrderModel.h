@@ -30,4 +30,10 @@
                   success:(void(^)(BOOL result, NSNumber *resultCode, NSString *message, OrderEntity *order, NSArray *orderItems))success
                   failure:(void(^)(NSError *error))failure;
 
+//获取订单列表
++ (void)getOrderListWithRoughStatus:(NSString *)roughStatus
+                            success:(void(^)(BOOL result, NSNumber *resultCode, NSString *message, NSArray *orders)) success
+                            failure:(void(^)(NSError *error))failure;
+
+
 @end

@@ -14,4 +14,6 @@
 
 @interface OrderListController : BaseController
 
+- (instancetype)initWithRoughStatus:(NSString *)roughtStatus;
+
 @end

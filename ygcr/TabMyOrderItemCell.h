@@ -12,6 +12,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TabMyOrderItemCellDelegate <NSObject>
+
+- (void)doGotoOrderListPageWithRoughStatus:(NSString *)roughStatus;
+
+@end
+
+
 @interface TabMyOrderItemCell : UITableViewCell
+
+@property (nonatomic, weak) id<TabMyOrderItemCellDelegate> delegate;
 
 @end

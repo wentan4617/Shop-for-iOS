@@ -11,6 +11,8 @@
 //
 
 #import "BaseController.h"
+#import "UserLoginController.h"
+#import "UserModel.h"
 #import "BaseLoadingView.h"
 #import "MBProgressHUD.h"
 
@@ -122,6 +124,20 @@
 - (void)doClickNetworkBrokenView
 {
     //由之类实现
+}
+
+
+#pragma mark - 如果用户没有登录则跳到登录页面
+
+- (BOOL)gotoLoginPageIfNotLogin
+{
+    if (![UserModel isUserLoginByStorage]) {
+        UserLoginController *userLoginCtrl = [UserLoginController new];
+        userLoginCtrl.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:userLoginCtrl animated:YES];
+        return YES;
+    }
+    return NO;
 }
 
 @end

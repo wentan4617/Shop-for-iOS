@@ -46,4 +46,9 @@
 
 -(void)toastWithError:(NSError *)error;
 
+
+#pragma mark - 如果用户没有登录则跳到登录页面
+
+- (BOOL)gotoLoginPageIfNotLogin;
+
 @end

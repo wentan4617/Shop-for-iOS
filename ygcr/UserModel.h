@@ -21,7 +21,7 @@
 
 //===== 与服务器交互的方法 =====//
 
-//获取用户信息
+//获取用户信息，每次获取用户信息都要更新Storage的用户信息
 + (void)getUser:(void(^)(BOOL result, NSNumber *resultCode, NSString *message, UserEntity *user))success
     failure:(void(^)(NSError *error))failure;
 

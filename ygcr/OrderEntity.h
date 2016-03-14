@@ -12,6 +12,7 @@
 
 #import "BaseEntity.h"
 #import "OrderStatus.h"
+#import "OrderItemEntity.h"
 
 @interface OrderEntity : BaseEntity
 
@@ -41,7 +42,9 @@
 @property (nonatomic, copy) NSString *roughPayType;
 @property (nonatomic, copy) NSString *opTransactionId; //在线支付的交易ID
 @property (nonatomic, copy) NSString *minTotalPriceLabel; //最少支付金额标记
+@property (nonatomic, copy) NSString *createDateString;
 
 @property (nonatomic, strong) OrderStatus *orderStatus;
+@property (nonatomic, strong) NSArray *orderItems; //存放OrderItemEntity
 
 @end

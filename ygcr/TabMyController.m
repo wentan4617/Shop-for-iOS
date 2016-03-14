@@ -14,6 +14,7 @@
 #import "UserLoginController.h"
 #import "UserInfoController.h"
 #import "TabMySettingController.h"
+#import "OrderListController.h"
 #import "UserModel.h"
 #import "TabMyHeadCell.h"
 #import "UserModel.h"
@@ -29,7 +30,7 @@ typedef enum{
 }eSection;
 
 
-@interface TabMyController () <UITableViewDataSource, UITableViewDelegate>
+@interface TabMyController () <UITableViewDataSource, UITableViewDelegate, TabMyOrderItemCellDelegate>
 {
     UITableView *_vTable;
     UserEntity *_user;
@@ -76,7 +77,22 @@ typedef enum{
 //更新本地用户信息，更新订单信息
 - (void)getData
 {
-    [_vTable reloadData];
+    __weak typeof (self) weakSelf = self;
+    [weakSelf showLoadingView];
+    
+    //判断用户是否在服务器登录了，如果没有登录要清空用户信息
+    [UserModel getUser:^(BOOL result, NSNumber *resultCode, NSString *message, UserEntity *user) {
+        if (result) {
+            _user = user;
+            [_vTable reloadData];
+        } else {
+            //[weakSelf toast:message];
+        }
+        [weakSelf hideLoadingView];
+    } failure:^(NSError *error) {
+        [weakSelf toastWithError:error];
+        [weakSelf hideLoadingView];
+    }];;
 }
 
 
@@ -144,6 +160,7 @@ typedef enum{
             TabMyOrderItemCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
             if (cell == nil) {
                 cell = [[TabMyOrderItemCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+                cell.delegate = self;
             }
             return cell;
         }
@@ -205,16 +222,29 @@ typedef enum{
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row;
     //eSectionHead
     if (eSectionHead == section) {
+        if ([self gotoLoginPageIfNotLogin])
+            return;
+        
         if ([UserModel isUserLoginByStorage]) {
             UserInfoController *userInfoCtrl = [[UserInfoController alloc] initWithUser:_user];
             userInfoCtrl.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:userInfoCtrl animated:YES];
+        }
+    }
+    //eSectionOrder
+    else if (eSectionOrder == section) {
+        if ([self gotoLoginPageIfNotLogin])
+            return;
+        
+        if (row == 0) {
+            OrderListController *orderListCtrl = [[OrderListController alloc] initWithRoughStatus:nil];
+            orderListCtrl.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:orderListCtrl animated:YES];
         } else {
-            UserLoginController *userLoginCtrl = [UserLoginController new];
-            userLoginCtrl.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:userLoginCtrl animated:YES];
+            //
         }
     }
     //eSectionSupport
@@ -223,6 +253,20 @@ typedef enum{
         ctrl.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:ctrl animated:YES];
     }
+}
+
+
+#pragma mark - TabMyOrderItemCellDelegate
+
+- (void)doGotoOrderListPageWithRoughStatus:(NSString *)roughStatus
+{
+    if ([self gotoLoginPageIfNotLogin])
+        return;
+    
+    OrderListController *orderListCtrl = [[OrderListController alloc] initWithRoughStatus:roughStatus];
+    orderListCtrl.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:orderListCtrl animated:YES];
+    
 }
 
 @end

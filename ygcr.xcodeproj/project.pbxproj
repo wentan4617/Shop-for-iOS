@@ -60,6 +60,7 @@
 		EA6EF1D21C888B5E00588264 /* AddressEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6EF1D11C888B5E00588264 /* AddressEditController.m */; };
 		EA6EF1D51C888C3000588264 /* AddressAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6EF1D41C888C3000588264 /* AddressAddController.m */; };
 		EA806F8A1C96BE250004B0C3 /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F891C96BE250004B0C3 /* UserInfoView.m */; };
+		EA806F8D1C96DCA30004B0C3 /* OrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F8C1C96DCA30004B0C3 /* OrderListCell.m */; };
 		EA87C54A1C825DFF0054BFB6 /* TabTopicProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */; };
 		EA87C54D1C82D26F0054BFB6 /* TabCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C54C1C82D26F0054BFB6 /* TabCartController.m */; };
 		EA87C5511C83064A0054BFB6 /* CartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5501C83064A0054BFB6 /* CartModel.m */; };
@@ -249,6 +250,8 @@
 		EA6EF1D41C888C3000588264 /* AddressAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAddController.m; sourceTree = "<group>"; };
 		EA806F881C96BE250004B0C3 /* UserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
 		EA806F891C96BE250004B0C3 /* UserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
+		EA806F8B1C96DCA30004B0C3 /* OrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListCell.h; sourceTree = "<group>"; };
+		EA806F8C1C96DCA30004B0C3 /* OrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListCell.m; sourceTree = "<group>"; };
 		EA87C5481C825DFF0054BFB6 /* TabTopicProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTopicProductCell.h; sourceTree = "<group>"; };
 		EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTopicProductCell.m; sourceTree = "<group>"; };
 		EA87C54B1C82D26F0054BFB6 /* TabCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabCartController.h; sourceTree = "<group>"; };
@@ -921,6 +924,8 @@
 				EADDA57C1C8D10BF00D23DF0 /* OrderSuccessView.m */,
 				EADDA57E1C8D314700D23DF0 /* OrderDetailStatusCell.h */,
 				EADDA57F1C8D314700D23DF0 /* OrderDetailStatusCell.m */,
+				EA806F8B1C96DCA30004B0C3 /* OrderListCell.h */,
+				EA806F8C1C96DCA30004B0C3 /* OrderListCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1235,6 +1240,7 @@
 				EA64D2451C85539D00F18336 /* UserRegisterStep1Controller.m in Sources */,
 				EADDA5651C8D000300D23DF0 /* OrderEntity.m in Sources */,
 				EA5F096E1C7D720F00FAFA34 /* TAAnimatedDotView.m in Sources */,
+				EA806F8D1C96DCA30004B0C3 /* OrderListCell.m in Sources */,
 				EA5F09761C7E50F500FAFA34 /* ProductAttrCell.m in Sources */,
 				EA6EF1C51C87F79600588264 /* PreorderAddressCell.m in Sources */,
 				EA6EF1C81C8800E100588264 /* AddressEntity.m in Sources */,

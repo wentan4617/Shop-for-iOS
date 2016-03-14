@@ -29,14 +29,19 @@
 
 //===== 与服务器交互的方法 =====//
 
-//获取用户信息
+//获取用户信息，每次获取用户信息都要更新Storage的用户信息
 + (void)getUser:(void(^)(BOOL result, NSNumber *resultCode, NSString *message, UserEntity *user))success
         failure:(void(^)(NSError *error))failure
 {
     NSString *url = kUrlUserGet;
     NSMutableDictionary *params = [NSMutableDictionary new];
-    [params setObject:[StorageUtil getUserId] forKey:kStorageUserId];
-    [params setObject:[StorageUtil getAppLoginToken] forKey:kStorageAppLoginToken];
+    
+    //因为setObjectForKey: object cannot be nil，所以这些判断是要的
+    if ([StorageUtil getUserId] != nil)
+        [params setObject:[StorageUtil getUserId] forKey:kStorageUserId];
+    
+    if ([StorageUtil getAppLoginToken] != nil)
+        [params setObject:[StorageUtil getAppLoginToken] forKey:kStorageAppLoginToken];
     
     [HttpClient requestJson:url
                      params:params
@@ -46,6 +51,7 @@
                             NSDictionary *userDict = [data objectForKey:@"user"];
                             user = [[UserEntity alloc] initWithDictionary:userDict];
                         }
+                        [self saveUserInfoToStorage:user];
                         success(result, resultCode, message, user);
                     }
                     failure:failure];

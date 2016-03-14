@@ -57,6 +57,14 @@
 #define kUrlOrderAddWithPreorderId      kUrlBase@"/app/order/add/%@"
 //查看订单
 #define kUrlOrderViewWithId             kUrlBase@"/app/order/%@"
+//获取订单列表
+#define kUrlOrderList                   kUrlBase@"/app/order/list"
+//获取待付款订单列表
+#define kUrlOrderListPendingPay         kUrlBase@"/app/order/list-pending-pay"
+//获取待收货订单列表
+#define kUrlOrderListDelivering         kUrlBase@"/app/order/list-delivering"
+//获取交易完成订单列表
+#define kUrlOrderListFinished           kUrlBase@"/app/order/list-finished"
 
 //获取用户信息
 #define kUrlUserGet                     kUrlBase@"/app/user/get-user"

@@ -34,11 +34,13 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (!self) return nil;
     
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     //划分为三个等宽的方格
     CGFloat gridWidth = self.frame.size.width / 3;
-    UIView *grid1 = [UIView new];
-    UIView *grid2 = [UIView new];
-    UIView *grid3 = [UIView new];
+    UIButton *grid1 = [UIButton new];
+    UIButton *grid2 = [UIButton new];
+    UIButton *grid3 = [UIButton new];
     [self addSubview:grid1];
     [self addSubview:grid2];
     [self addSubview:grid3];
@@ -121,7 +123,26 @@
         make.top.equalTo(_vPenddingLabel);
     }];
     
+    [grid1 addTarget:self action:@selector(clickGrid1) forControlEvents:UIControlEventTouchUpInside];
+    [grid2 addTarget:self action:@selector(clickGrid2) forControlEvents:UIControlEventTouchUpInside];
+    [grid3 addTarget:self action:@selector(clickGrid3) forControlEvents:UIControlEventTouchUpInside];
+    
     return self;
+}
+
+- (void)clickGrid1
+{
+    [self.delegate doGotoOrderListPageWithRoughStatus:kRoughStatusPendingPay];
+}
+
+- (void)clickGrid2
+{
+    [self.delegate doGotoOrderListPageWithRoughStatus:kRoughStatusDelivering];
+}
+
+- (void)clickGrid3
+{
+    [self.delegate doGotoOrderListPageWithRoughStatus:kRoughStatusFinished];
 }
 
 @end
