@@ -6,7 +6,7 @@
 //  Copyright © 2015年 黄治华. All rights reserved.
 //
 //  @email 908601756@qq.com
-//
+//  @open source https://github.com/YKXMall
 //  @license The MIT License (MIT)
 //
 
