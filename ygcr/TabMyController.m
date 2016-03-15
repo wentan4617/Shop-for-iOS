@@ -15,6 +15,7 @@
 #import "UserInfoController.h"
 #import "TabMySettingController.h"
 #import "OrderListController.h"
+#import "LocationShopController.h"
 #import "UserModel.h"
 #import "TabMyHeadCell.h"
 #import "UserModel.h"
@@ -188,6 +189,9 @@ typedef enum{
         TabMyCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         if (cell == nil) {
             if (row == 0) {
+                cell = [[TabMyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier imageNamed:@"icon_location_light" title:@"店址导航"];
+            }
+            else if (row == 1) {
                 cell = [[TabMyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier imageNamed:@"icon_my_star" title:@"关于我们"];
             }
             else {
@@ -249,9 +253,22 @@ typedef enum{
     }
     //eSectionSupport
     else if (eSectionSupport == section) {
-        TabMySettingController *ctrl = [TabMySettingController new];
-        ctrl.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:ctrl animated:YES];
+        //店址导航
+        if (row == 0) {
+            LocationShopController *ctrl = [LocationShopController new];
+            ctrl.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ctrl animated:YES];
+        }
+        //关于我们
+        else if (row == 1) {
+            //
+        }
+        //设置
+        else if (row == 2) {
+            TabMySettingController *ctrl = [TabMySettingController new];
+            ctrl.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ctrl animated:YES];
+        }
     }
 }
 

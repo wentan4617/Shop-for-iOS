@@ -61,6 +61,8 @@
 		EA6EF1D51C888C3000588264 /* AddressAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6EF1D41C888C3000588264 /* AddressAddController.m */; };
 		EA806F8A1C96BE250004B0C3 /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F891C96BE250004B0C3 /* UserInfoView.m */; };
 		EA806F8D1C96DCA30004B0C3 /* OrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F8C1C96DCA30004B0C3 /* OrderListCell.m */; };
+		EA806F931C97B7BE0004B0C3 /* LocationShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F921C97B7BE0004B0C3 /* LocationShopController.m */; };
+		EA806F971C97BC1F0004B0C3 /* LocationAnnotationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F961C97BC1F0004B0C3 /* LocationAnnotationModel.m */; };
 		EA87C54A1C825DFF0054BFB6 /* TabTopicProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */; };
 		EA87C54D1C82D26F0054BFB6 /* TabCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C54C1C82D26F0054BFB6 /* TabCartController.m */; };
 		EA87C5511C83064A0054BFB6 /* CartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5501C83064A0054BFB6 /* CartModel.m */; };
@@ -252,6 +254,10 @@
 		EA806F891C96BE250004B0C3 /* UserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
 		EA806F8B1C96DCA30004B0C3 /* OrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListCell.h; sourceTree = "<group>"; };
 		EA806F8C1C96DCA30004B0C3 /* OrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListCell.m; sourceTree = "<group>"; };
+		EA806F911C97B7BE0004B0C3 /* LocationShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationShopController.h; sourceTree = "<group>"; };
+		EA806F921C97B7BE0004B0C3 /* LocationShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationShopController.m; sourceTree = "<group>"; };
+		EA806F951C97BC1F0004B0C3 /* LocationAnnotationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotationModel.h; sourceTree = "<group>"; };
+		EA806F961C97BC1F0004B0C3 /* LocationAnnotationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotationModel.m; sourceTree = "<group>"; };
 		EA87C5481C825DFF0054BFB6 /* TabTopicProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTopicProductCell.h; sourceTree = "<group>"; };
 		EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTopicProductCell.m; sourceTree = "<group>"; };
 		EA87C54B1C82D26F0054BFB6 /* TabCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabCartController.h; sourceTree = "<group>"; };
@@ -611,6 +617,7 @@
 		EA6C578C1C7ADC50008DE667 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				EA806F8E1C97B7550004B0C3 /* Location */,
 				EADDA56F1C8D0F9C00D23DF0 /* Order */,
 				EA6EF1CA1C888B0900588264 /* Address */,
 				EA5BB8D71C87612E00163F82 /* Preorder */,
@@ -818,6 +825,41 @@
 				EA6EF1D41C888C3000588264 /* AddressAddController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA806F8E1C97B7550004B0C3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EA806F941C97BBE90004B0C3 /* Model */,
+				EA806F8F1C97B7640004B0C3 /* Controller */,
+				EA806F901C97B76D0004B0C3 /* View */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		EA806F8F1C97B7640004B0C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA806F911C97B7BE0004B0C3 /* LocationShopController.h */,
+				EA806F921C97B7BE0004B0C3 /* LocationShopController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA806F901C97B76D0004B0C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA806F941C97BBE90004B0C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA806F951C97BC1F0004B0C3 /* LocationAnnotationModel.h */,
+				EA806F961C97BC1F0004B0C3 /* LocationAnnotationModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EA87C54E1C8300290054BFB6 /* TabCart */ = {
@@ -1211,6 +1253,7 @@
 				EA5F096D1C7D720F00FAFA34 /* TAAbstractDotView.m in Sources */,
 				EA64D2511C85AFAA00F18336 /* UserRegisterStep2Controller.m in Sources */,
 				EAF255CF1C846FBC004ECC2E /* TabMyHeadCell.m in Sources */,
+				EA806F931C97B7BE0004B0C3 /* LocationShopController.m in Sources */,
 				EA64D2481C856AE100F18336 /* UserInfoController.m in Sources */,
 				EA6C57BB1C7B191B008DE667 /* UIColor+hexColor.m in Sources */,
 				EA2FA3F01C89E05100714152 /* AddressAddView.m in Sources */,
@@ -1290,6 +1333,7 @@
 				EAC496E31C7C151300DCDD56 /* BaseModel.m in Sources */,
 				EAFBA72D1C8034D90001015D /* PriceLabel.m in Sources */,
 				EADDA57D1C8D10BF00D23DF0 /* OrderSuccessView.m in Sources */,
+				EA806F971C97BC1F0004B0C3 /* LocationAnnotationModel.m in Sources */,
 				EA87C55D1C831C8A0054BFB6 /* TabCartItemCell.m in Sources */,
 				EA87C5511C83064A0054BFB6 /* CartModel.m in Sources */,
 				EAF255D21C848B9C004ECC2E /* UserLoginView.m in Sources */,
