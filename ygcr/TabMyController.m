@@ -16,6 +16,7 @@
 #import "TabMySettingController.h"
 #import "OrderListController.h"
 #import "LocationShopController.h"
+#import "TabMyAboutUsController.h"
 #import "UserModel.h"
 #import "TabMyHeadCell.h"
 #import "UserModel.h"
@@ -47,6 +48,7 @@ typedef enum{
     self.navigationItem.leftBarButtonItem = nil;
     
     _vTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    _vTable.tableFooterView = [[UIView alloc] init];
     _vTable.dataSource = self;
     _vTable.delegate = self;
     [self.view addSubview:_vTable];
@@ -125,7 +127,7 @@ typedef enum{
         return 3;
     }
     else if (eSectionSupport == section) {
-        return 2;
+        return 3;
     }
     else {
         return 0;
@@ -247,9 +249,16 @@ typedef enum{
             OrderListController *orderListCtrl = [[OrderListController alloc] initWithRoughStatus:nil];
             orderListCtrl.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:orderListCtrl animated:YES];
-        } else {
-            //
         }
+    }
+    //eSectionCoupon
+    else if (eSectionCoupon == section) {
+        if ([self gotoLoginPageIfNotLogin])
+            return;
+        
+        TabMyAboutUsController *ctrl = [TabMyAboutUsController new];
+        ctrl.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:ctrl animated:YES];
     }
     //eSectionSupport
     else if (eSectionSupport == section) {
@@ -261,7 +270,9 @@ typedef enum{
         }
         //关于我们
         else if (row == 1) {
-            //
+            TabMyAboutUsController *ctrl = [TabMyAboutUsController new];
+            ctrl.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:ctrl animated:YES];
         }
         //设置
         else if (row == 2) {

@@ -63,6 +63,7 @@
 		EA806F8D1C96DCA30004B0C3 /* OrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F8C1C96DCA30004B0C3 /* OrderListCell.m */; };
 		EA806F931C97B7BE0004B0C3 /* LocationShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F921C97B7BE0004B0C3 /* LocationShopController.m */; };
 		EA806F971C97BC1F0004B0C3 /* LocationAnnotationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F961C97BC1F0004B0C3 /* LocationAnnotationModel.m */; };
+		EA806F9B1C97E28A0004B0C3 /* TabMyAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA806F9A1C97E28A0004B0C3 /* TabMyAboutUsController.m */; };
 		EA87C54A1C825DFF0054BFB6 /* TabTopicProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */; };
 		EA87C54D1C82D26F0054BFB6 /* TabCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C54C1C82D26F0054BFB6 /* TabCartController.m */; };
 		EA87C5511C83064A0054BFB6 /* CartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA87C5501C83064A0054BFB6 /* CartModel.m */; };
@@ -258,6 +259,8 @@
 		EA806F921C97B7BE0004B0C3 /* LocationShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationShopController.m; sourceTree = "<group>"; };
 		EA806F951C97BC1F0004B0C3 /* LocationAnnotationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotationModel.h; sourceTree = "<group>"; };
 		EA806F961C97BC1F0004B0C3 /* LocationAnnotationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotationModel.m; sourceTree = "<group>"; };
+		EA806F991C97E28A0004B0C3 /* TabMyAboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabMyAboutUsController.h; sourceTree = "<group>"; };
+		EA806F9A1C97E28A0004B0C3 /* TabMyAboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabMyAboutUsController.m; sourceTree = "<group>"; };
 		EA87C5481C825DFF0054BFB6 /* TabTopicProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTopicProductCell.h; sourceTree = "<group>"; };
 		EA87C5491C825DFF0054BFB6 /* TabTopicProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTopicProductCell.m; sourceTree = "<group>"; };
 		EA87C54B1C82D26F0054BFB6 /* TabCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabCartController.h; sourceTree = "<group>"; };
@@ -680,6 +683,7 @@
 		EA6C57901C7AE23E008DE667 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA806F981C97E24B0004B0C3 /* TabMy */,
 				EA6C57A71C7AE6BA008DE667 /* TabHomeController.h */,
 				EA6C57A81C7AE6BA008DE667 /* TabHomeController.m */,
 				EA6C57A11C7AE615008DE667 /* TabTopicController.h */,
@@ -688,8 +692,6 @@
 				EA87C54C1C82D26F0054BFB6 /* TabCartController.m */,
 				EAF255C91C846614004ECC2E /* TabMyController.h */,
 				EAF255CA1C846614004ECC2E /* TabMyController.m */,
-				EA5BB8D11C873A2900163F82 /* TabMySettingController.h */,
-				EA5BB8D21C873A2900163F82 /* TabMySettingController.m */,
 				EA5BB8D41C87579F00163F82 /* CartController.h */,
 				EA5BB8D51C87579F00163F82 /* CartController.m */,
 			);
@@ -860,6 +862,17 @@
 				EA806F961C97BC1F0004B0C3 /* LocationAnnotationModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EA806F981C97E24B0004B0C3 /* TabMy */ = {
+			isa = PBXGroup;
+			children = (
+				EA5BB8D11C873A2900163F82 /* TabMySettingController.h */,
+				EA5BB8D21C873A2900163F82 /* TabMySettingController.m */,
+				EA806F991C97E28A0004B0C3 /* TabMyAboutUsController.h */,
+				EA806F9A1C97E28A0004B0C3 /* TabMyAboutUsController.m */,
+			);
+			name = TabMy;
 			sourceTree = "<group>";
 		};
 		EA87C54E1C8300290054BFB6 /* TabCart */ = {
@@ -1306,6 +1319,7 @@
 				EA5F09721C7D720F00FAFA34 /* SDCycleScrollView.m in Sources */,
 				EAC496E91C7C155200DCDD56 /* CategoryModel.m in Sources */,
 				EA87C5541C8309110054BFB6 /* CartItemEntity.m in Sources */,
+				EA806F9B1C97E28A0004B0C3 /* TabMyAboutUsController.m in Sources */,
 				EA5F095B1C7D704D00FAFA34 /* ProductInfoCell.m in Sources */,
 				EA64D2631C85DD7600F18336 /* UserRegisterSuccessView.m in Sources */,
 				EA87C54D1C82D26F0054BFB6 /* TabCartController.m in Sources */,
