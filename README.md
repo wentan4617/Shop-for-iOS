@@ -1,7 +1,7 @@
 # Shop-for-iOS
 
-#### IOS电商开源APP，操作有点类似京东，淘宝，去年开发的一个项目，现在把它分享出来。
-#### 服务端是用Java写的，同样也开源出来，对应项目是Shop-for-JavaWeb
+#### IOS商城，电商开源APP，类似京东商城，天猫商城，淘宝，去年开发的一个项目，现在把它分享出来。
+#### 服务端是Java 商城，对应项目是Shop-for-JavaWeb
 
 
 ##### 1.App使用MVC框架完成开发。
@@ -24,7 +24,11 @@
 
 ![](https://raw.githubusercontent.com/YKXMall/Shop-for-iOS/master/Screenshoot/IMG_6740.jpg)      ![](https://raw.githubusercontent.com/YKXMall/Shop-for-iOS/master/Screenshoot/IMG_6741.jpg)     
 
-
+###### Created by Tony Wong
+###### Copyright © 2015 YKXMall. All rights reserved.
+###### email 908601756@qq.com
 
 ###### 此源码遵守 The MIT License (MIT)，可用于商业上，但是因此带来的商业损失本作者不承担责任。
+
+
 
